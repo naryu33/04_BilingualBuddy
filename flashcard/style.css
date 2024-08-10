@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "gamestation";
+    src: url('GamestationCond.otf');
+}
+
+* {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "gamestation";
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#table {
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 1px solid #333;
+    padding: 0 10px;
+    text-align: center;
+    width: 700px; 
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 1.4rem;
+}
+
+#table button {
+    color: black;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-btn{
+    background-color: white;
+    width: 30%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    font-family: "gamestation";
+    color: white; /* Text color */
+    background-color: black; /* Background color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.6rem; /* Font size */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding */
+    display: inline-block; /* Display as inline block */
+    margin: 0.5rem; /* Add some margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+a:hover {
+    background-color: #333; /* Darken background color on hover */
+    transform: translateY(-2px); /* Move button slightly up */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}

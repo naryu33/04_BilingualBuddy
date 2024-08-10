@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "gamestation";
+    src: url('GamestationCond.otf');
+}
+/* 全体の背景色と基本のテキスト色 */
+body {
+    background-color: #fff; /* 白背景 */
+    color: #000; /* 黒文字 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inner-block {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f8f8; /* 明るいグレーの内側ブロック */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ボックスシャドウを追加 */
+}
+
+.quiz-question-number,
+.quiz-question {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quiz-question {
+    font-family: "gamestation"; /* カスタムフォントを使用 */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.quiz-answer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quiz-label {
+    font-family: "gamestation"; /* カスタムフォントを使用 */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.quiz-input {
+    padding: 10px;
+    font-size: 1.6rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem; /* 角を丸く */
+    background-color: #fff;
+    color: #000;
+}
+
+.submit-button {
+    font-family: "gamestation"; /* カスタムフォントを使用 */
+    color: white; /* テキスト色を白に */
+    background-color: black; /* 背景色を黒に */
+    text-decoration: none; /* 下線を除去 */
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem; /* 角を丸く */
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #333; /* ホバー時に背景色を濃く */
+    transform: translateY(-2px); /* ボタンを少し上に */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* シャドウを増やす */
+}
+
+.goback-button {
+    font-family: "gamestation"; /* カスタムフォントを使用 */
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.goback-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.score-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-family: "gamestation"; /* カスタムフォントを使用 */
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.full {
+    font-family: "gamestation"; /* カスタムフォントを使用 */
+    font-size: 1.8rem;
+}
+
+.finish {
+    display: none;
+    text-align: center;
+}
