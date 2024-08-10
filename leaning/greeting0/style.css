@@ -3,16 +3,41 @@
     src: url('GamestationCond.otf');
 }
 
-* {
-    text-align: center;
-}
-
 .main {
     font-family: "gamestation";
 }
 
+
+.main .title {
+    text-align: center;
+}
+
+.main .sentence {
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.main .sentence .card {
+    height: 290px;
+    width: 365px;
+    background-color: #f8f8f8;
+    padding: 20px 35px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
 h1 {
     font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 p {
